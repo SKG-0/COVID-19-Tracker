@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Stats</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&&family=Raleway:wght@500&family=Recursive&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-text">
+            <h1>Covid-19 Status In India</h1>
+        </div>
+    </nav>
+    <div class="date">
+        <h1 class="updated_date"></h1>
+    </div>
+    <div class="india-stats">
+        <div class="current">
+            <h3 class="current-diff"></h3>
+            <h1 class="current-text"></h1>
+            <h4>Confirmed</h4>
+            <h5 class="current_rate"></h5>
+        </div>
+        <div class="positive">
+            <h3 class="positive-diff"></h3>
+            <h1 class="positive-text"></h1>
+            <h4>Active</h4>
+            <h5 class="positive_rate"></h5>
+        </div>
+        <div class="recovered">
+            <h3 class="recovered-diff"></h3>
+            <h1 class="recovered-text"></h1>
+            <h4>Recovered</h4>
+            <h5 class="recovered_rate"></h5>
+        </div>
+        <div class="deaths">
+            <h3 class="deaths-diff"></h3>
+            <h1 class="deaths-text"></h1>
+            <h4>Deaths</h4>
+            <h5 class="deaths_rate"></h5>
+        </div>
+        <div class="tested">
+            <h3 class="test-diff"></h3>
+            <h1 class="test-text"></h1>
+            <h4 class="tested-h4">Tested</h4>
+            <h5 class="tested_rate"></h5>
+        </div>
+    </div>
+    <form class="input">
+        <input type="text" id="input-text" placeholder="Enter State or a District" required>
+    </form>
+    <div class="error">
+        <h1>Please Enter a valid State or District or check your Spelling</h1>
+    </div>
+    <div class="tables">
+        <table>
+            <tr class="th2">
+                <th class="th-cf">Confirmed</th>
+                <th class="th-ac">Active</th>
+                <th class="th-rc">Recovered</th>
+                <th class="th-dt">Deaths</th>
+            </tr>
+            <tr class="th3 hide">
+                <th class="th2-1">
+                    <div class="th2-cf-diff" style="margin-bottom: 5px"></div>
+                    <div class="th2-cf" style="margin-bottom: 25px;"></div>
+                    <div></div>
+                </th>
+                <th class="th2-2">
+                    <div class="th2-ac-diff" style="margin-bottom: 5px"></div>
+                    <div class="th2-ac" style="margin-bottom: 25px;"></div>
+                    <div class="th2-ac-rate"></div>
+                </th>
+                <th class="th2-3">
+                    <div class="th2-rc-diff" style="margin-bottom: 5px"></div>
+                    <div class="th2-rc" style="margin-bottom: 25px;"></div>
+                    <div class="th2-rc-rate"></div>
+                </th>
+                <th class="th2-4">
+                    <div class="th2-dt-diff" style="margin-bottom: 5px"></div>
+                    <div class="th2-dt" style="margin-bottom: 25px;"></div>
+                    <div class="th2-dt-rate"></div>
+                </th>
+            </tr>
+        </table>
+        <div>
+            <h1 class="last-time"></h1>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,362 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav-text h1{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 44px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: rgb(71, 63, 63);
+}
+.india-stats{
+  width: 100%;
+  height: 25vh;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.current h1{
+  text-align: center;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 20%;
+  color: red;
+  font-family: 'Roboto Slab', serif;
+}
+.positive h1{
+  text-align: center;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 20%;
+  color: blue;
+  font-family: 'Roboto Slab', serif;
+}
+.recovered h1{
+  text-align: center;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 20%;
+  color: green;
+  font-family: 'Roboto Slab', serif;
+}
+.deaths h1{
+  text-align: center;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 20%;
+  color: grey;
+  font-family: 'Roboto Slab', serif;
+}
+.current h3{
+  text-align: center;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 15%;
+  color: red;
+  font-family: 'Roboto Slab', serif;
+  font-size:16px;
+}
+.positive h3{
+  text-align: center;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 15%;
+  color: blue;
+  font-family: 'Roboto Slab', serif;
+  font-size:16px;
+}
+.recovered h3{
+  text-align: center;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 15%;
+  color: green;
+  font-family: 'Roboto Slab', serif;
+  font-size:16px;
+}
+.deaths h3{
+  text-align: center;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 15%;
+  color: grey;
+  font-family: 'Roboto Slab', serif;
+  font-size:16px;
+}
+.current h4{
+  position: relative;
+  text-align: center;
+  top: 15%;
+  color: red;
+  font-family: 'Raleway', sans-serif;
+}
+.positive h4{
+  position: relative;
+  text-align: center;
+  top: 15%;
+  color: blue;
+  font-family: 'Raleway', sans-serif;
+}
+.recovered h4{
+  text-align: center;
+  position: relative;
+  top: 15%;
+  color: green;
+  font-family: 'Raleway', sans-serif;
+}
+.deaths h4{
+  text-align: center;
+  position: relative;
+  top: 15%;
+  color: gray;
+  font-family: 'Raleway', sans-serif;
+}
+.tested h1{
+  text-align: center;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 20%;
+  color: rgb(150, 78, 218);
+  font-family: 'Roboto Slab', serif;
+}
+.tested h4{
+  text-align: center;
+  position: relative;
+  top: 15%;
+  color: rgb(150, 78, 218);
+  font-family: 'Raleway', sans-serif;
+}
+.tested h3{
+  text-align: center;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 15%;
+  color: rgb(150, 78, 218);
+  font-family: 'Roboto Slab', serif;
+  font-size:16px;
+}
+.current h5{
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-size: 16px;
+  color: red;
+  font-family: 'Raleway', sans-serif;
+}
+.recovered h5{
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: green;
+}
+.positive h5{
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-size: 16px;
+  color: blue;
+  font-family: 'Raleway', sans-serif;
+}
+.deaths h5{
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-size: 16px;
+  color: gray;
+  font-family: 'Raleway', sans-serif;
+}
+.tested h5{
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(150, 78, 218);
+}
+.updated_date{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 30px;
+  font-size: 14px;
+  color:rgb(71, 63, 63);;
+}
+.input{
+  margin-top: 70px;
+  text-align: center;
+  align-items: center;
+}
+.input input{
+  width: 50%;
+  height: 40px;
+  font-size: 20px;
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: 0 0 7px gray;
+  outline: none;
+  border-radius: 5px;
+}
+#input-text::placeholder{
+  font-family: 'Raleway', sans-serif;
+  color: gray;
+  -webkit-tap-highlight-color: gray;
+}
+.error{
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 40px;
+  color: rgb(223, 106, 106);
+  animation-name: bing;
+  animation-duration: 1s;
+  display: none;
+}
+.tables{
+  position: relative;
+  margin-top: 40px;
+}
+table{
+  position: relative;
+  width: 100%;
+  height: 15vh;
+}
+.th-cf{
+  color: red;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+.th-rc{
+  color: green;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+.th-dt{
+  color:gray;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+.th-tt{
+  color: rgb(150, 78, 218);
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+.th-ac{
+  color: blue;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+.th2-1{
+  color: red;
+  font-family: 'Raleway', sans-serif;
+}
+.th2-2{
+  color: blue;
+  font-family: 'Raleway', sans-serif;
+}
+.th2-3{
+  color: green;
+  font-family: 'Raleway', sans-serif;
+}
+.th2-4{
+  color: gray;
+  font-family: 'Raleway', sans-serif;
+}
+.th2-cf,.th2-ac,.th2-rc,.th2-dt{
+  font-family: 'Roboto Slab', serif;
+}
+.th2{
+  visibility: hidden;
+}
+.hide{
+  display: none;
+}
+.th2-ac-diff,.th2-rc-diff,.th2-dt-diff,.th2-cf-diff{
+  font-family: 'Roboto Slab', serif;
+}
+.last-time{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 40px;
+  font-size: 14px;
+  color:rgb(71, 63, 63);;
+}
+@media(max-width:800px){
+  .nav-text h1{
+    font-size: 30px;
+  }
+  .current-text,.positive-text,.recovered-text,.test-text,.deaths-text{
+    font-size: 20px;
+  }
+  .current h3{
+    font-size: 12px;
+  }
+  .positive h3,.recovered h3,.deaths h3,.tested h3{
+    font-size: 12px;
+  }
+  .current h5,.positive h5,.recovered h5,.deaths h5,.tested h5{
+    font-size: 10px;
+  }
+  .th-cf,.th-ac,.th-dt,.th-rc{
+    font-size: 16px;
+  }
+  .th2-ac-diff,.th2-rc-diff,.th2-dt-diff,.th2-cf-diff{
+    font-size: 12px;
+  }
+  .th2-cf,.th2-dt,.th2-ac,.th2-rc{
+    font-size: 18px;
+  }
+  .th2-ac-rate,.th2-rc-rate,.th2-dt-rate,.th2-cf-rate{
+    font-size: 12px;
+  }
+  .input input{
+    width: 70%;
+  }
+}
+@media(max-width:500px){
+  .nav-text h1{
+    font-size: 30px;
+  }
+  .current-text,.positive-text,.recovered-text,.test-text,.deaths-text{
+    font-size: 20px;
+  }
+  .current h3{
+    font-size: 12px;
+  }
+  .positive h3,.recovered h3,.deaths h3,.tested h3{
+    font-size: 12px;
+  }
+  .current h5,.positive h5,.recovered h5,.deaths h5,.tested h5{
+    font-size: 10px;
+  }
+  .th-cf,.th-ac,.th-dt,.th-rc{
+    font-size: 16px;
+  }
+  .th2-ac-diff,.th2-rc-diff,.th2-dt-diff,.th2-cf-diff{
+    font-size: 12px;
+  }
+  .th2-cf,.th2-dt,.th2-ac,.th2-rc{
+    font-size: 18px;
+  }
+  .th2-ac-rate,.th2-rc-rate,.th2-dt-rate,.th2-cf-rate{
+    font-size: 12px;
+  }
+  .tested{
+    display: none;
+  }
+  .india-stats{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+}
