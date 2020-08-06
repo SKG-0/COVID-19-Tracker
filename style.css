@@ -321,7 +321,10 @@ table{
     font-size: 12px;
   }
   .input input{
-    width: 70%;
+    width: 85%;
+  }
+  .error h1{
+    font-size: 16px;
   }
 }
 @media(max-width:500px){
@@ -358,5 +361,17 @@ table{
   .india-stats{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+  }
+  #input-text::placeholder{
+    font-size: 14px;
+  }
+  .india-stats{
+    margin-left: 5px;
+  }
+  .error h1{
+    font-size: 12px;
+  }
+  .updated_date{
+    font-size: 12px;
   }
 }

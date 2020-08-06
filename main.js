@@ -16,11 +16,13 @@ const deaths_rate = document.querySelector(".deaths_rate");
 const tested_rate = document.querySelector(".tested_rate");
 const population = 1370000000;
 let c=0;
+let a=[];
 fetch("https://api.covid19india.org/data.json")
   .then((res) => {
     return res.json();
   })
   .then((data) => {
+    console.log(data);
     current_text.innerText = formatNumber(data.statewise[0].confirmed);
     recovered_text.innerText = formatNumber(data.statewise[0].recovered);
     positive_text.innerText = formatNumber(data.statewise[0].active);
@@ -69,6 +71,7 @@ function getdata(input_text) {
       return res.json();
     })
     .then((data) => {
+      let c=0;
       if (data[input_text] != undefined) {
         fetch('https://api.covid19india.org/data.json').then(res=>{
           return res.json();
@@ -155,33 +158,4 @@ function capitalize_Words(str) {
 function formatNumber(num) {
   return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
 }
-// function getdistrictsdata(ele) {
-//   fetch("https://api.covid19india.org/state_district_wise.json")
-//     .then((res) => {
-//       return res.json();
-//     })
-//     .then((data) => {
-//       console.log(data);
-//       console.log(ele);
-//     });
-// }
 
-// function getdistricts(input_text) {
-//   fetch("districts.json")
-//     .then((res) => {
-//       return res.json();
-//     })
-//     .then((data) => {
-//       for (x in data.states) {
-//         data.states[x].districts.forEach((ele) => {
-//           if (ele == input_text) {
-//             document.querySelector(".error").style.display = "none";
-//             getdistricts(ele);
-//           }
-//           else{
-//             document.querySelector(".error").style.display = "block";
-//           }
-//         });
-//       }
-//     });
-// }
